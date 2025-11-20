@@ -2,6 +2,16 @@
 
 API REST para gestionar citas médicas con operaciones CRUD completas.
 
+## ‼️ Requisitos Previos
+
+Un detalle importante a considerar es el uso de la **API Key** durante el desarrollo y pruebas del proyecto.  
+La API Key proporcionada inicialmente para la prueba **no funcionaba**, lo que impedía realizar las solicitudes a OpenAI.
+
+Sin embargo, al utilizar una **API Key personal**, con permisos activos para realizar consultas a OpenAI, el sistema funcionó sin inconvenientes.
+
+Gracias a esto, pude encontrar una **solución espontánea** frente a un problema interesante que surgió durante el proceso.
+
+
 ##  Requisitos Previos
 
 - Node.js (versión 20.19.0 o superior)

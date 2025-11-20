@@ -1,7 +1,11 @@
 # Backend - Sistema de Citas Médicas
 
 API REST para gestionar citas médicas con operaciones CRUD completas.
-Node es un requerimiento cualquier version
+
+##  Requisitos Previos
+
+- Node.js (versión 20.19.0 o superior)
+- npm (versión 8.0.0 o superior)
 
 ## Instalación
 
@@ -9,6 +13,15 @@ Node es un requerimiento cualquier version
 git clone https://github.com/fatorresd/backendChatbot.git
 cd backend
 npm install
+```
+## Crear .env para ejecutar en local
+- Asi debe lucir el .env
+  
+```bash
+PORT=3001
+NODE_ENV=development
+
+OPENAI_API_KEY=apikeysecrethere
 ```
 
 ## Desarrollo

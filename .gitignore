@@ -1,0 +1,32 @@
+# Dependencias de Node.js
+node_modules/
+
+# Build de producción (definido en tsconfig.json)
+dist/
+
+# Variables de entorno (Seguridad: nunca subir esto)
+.env
+
+# Dependencias de Node.js
+node_modules/
+
+# Build de producción (definido en tsconfig.json)
+dist/
+
+# Variables de entorno
+.env
+
+# Logs de errores y debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuración de editores (opcional)
+.vscode/
+.idea/

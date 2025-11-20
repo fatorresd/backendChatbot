@@ -11,7 +11,7 @@ API REST para gestionar citas médicas con operaciones CRUD completas.
 
 ```bash
 git clone https://github.com/fatorresd/backendChatbot.git
-cd backend
+cd backendChatbot
 npm install
 ```
 ## Crear .env para ejecutar en local
@@ -21,7 +21,7 @@ npm install
 PORT=3001
 NODE_ENV=development
 
-OPENAI_API_KEY=apikeysecrethere
+OPENAI_API_KEY=apikeysecrethere Importante aca colocar la apiscretKey
 ```
 
 ## Desarrollo

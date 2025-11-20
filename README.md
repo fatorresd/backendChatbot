@@ -1,10 +1,12 @@
 # Backend - Sistema de Citas Médicas
 
 API REST para gestionar citas médicas con operaciones CRUD completas.
+Node es un requerimiento cualquier version
 
 ## Instalación
 
 ```bash
+git clone https://github.com/fatorresd/backendChatbot.git
 cd backend
 npm install
 ```

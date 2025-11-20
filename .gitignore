@@ -12,7 +12,7 @@ node_modules/
 dist/
 
 # Variables de entorno
-# .env
+.env
 
 # Logs de errores y debug
 npm-debug.log*

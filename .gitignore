@@ -4,8 +4,6 @@ node_modules/
 # Build de producción (definido en tsconfig.json)
 dist/
 
-# Variables de entorno (Seguridad: nunca subir esto)
-.env
 
 # Dependencias de Node.js
 node_modules/

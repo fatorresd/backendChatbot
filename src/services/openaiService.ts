@@ -1,5 +1,8 @@
 import OpenAI from 'openai';
 import { Appointment } from '../types/appointment';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 console.log('================================');
 console.log(' DEBUG OPENAI SERVICE');
@@ -10,7 +13,7 @@ console.log('API Key primeros 20 chars:', process.env.OPENAI_API_KEY?.substring(
 console.log('API Key tiene espacios?:', process.env.OPENAI_API_KEY?.includes(' '));
 console.log('================================\n');
 
-const apiKey = process.env.OPENAI_API_KEY || 'apikey';
+const apiKey = process.env.OPENAI_API_KEY || 'Apikey';
 
 if (!apiKey) {
     console.error(' ERROR: No se encontró OPENAI_API_KEY');
@@ -52,6 +55,14 @@ PARA MODIFICAR CITAS:
 - Puedes preguntar "¿Qué cita deseas modificar?" si no especifica el ID
 - Extrae los campos que el usuario quiere cambiar
 - Responde con el formato JSON incluyendo el ID y los campos a actualizar
+
+PARA ELIMINAR CITAS:
+- Si el usuario quiere eliminar/cancelar una cita y proporciona el ID (solo un número o "ID: número"), responde con JSON:
+{
+    "intent": "delete",
+    "id": "ID_proporcionado",
+    "response": "mensaje confirmando la eliminación"
+}
 
 Responde SIEMPRE en este formato JSON cuando detectes una intención de agendar:
 {
